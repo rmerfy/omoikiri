@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+button,
+span,
+a,
+label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 18px;
+    text-align: center;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 6px;
+        border-radius: 4px;
+        background: #c4c4c4;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: $gold-gradient;
+}
+
+.submit-modal {
+    background: rgba(#000, 0.2);
+    text-align: center;
+    &::before {
+        backdrop-filter: blur(2px);
+    }
+    .tingle-modal-box {
+        max-width: 320px;
+        margin: auto;
+    }
+    .tingle-modal-box__content {
+        padding: 30px 15px;
+    }
+}
+
+.nav--fixed {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.page--scroll {
+    margin-top: 48px;
+}
+
+.callback-modal {
+    display: none;
+}
+
+.tooltip {
+    position: relative;
+    &:hover::before {
+        opacity: 1;
+        visibility: visible;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        padding: 4px 10px;
+        background: rgba(#191919, 0.9);
+        border-radius: 4px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s ease-in-out;
+        font-size: 10px;
+    }
+}
+
+.tooltip--list::before {
+    content: 'Список';
+}
+
+.tooltip--grid::before {
+    content: 'Сетка';
+}
+
+.tooltip--compare::before {
+    content: 'Сравнить';
+}
+.tooltip--favorite::before {
+    content: 'Закладки';
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omoikiri-shop</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <ul class="top-menu">
+                        <li class="top-menu__item top-menu__item--address"><a href="#">Наши адреса</a>
+                            <div class="top-menu__map">
+                                <iframe class="yandex-map"
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4e43801f6849504477ea03452f96efd7c40804b5cfdefdfcfcf692aea7622e2&amp;source=constructor"
+                                    width="100%" height="320" frameborder="0"></iframe>
+                            </div>
+                        </li>
+                        <li class="top-menu__item top-menu__item--time"><a href="#">Время работы</a>
+                            <ul class="top-menu__sub">
+                                <li>с 11.00 до 20.00</li>
+                                <li>Без выходных</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <div class="mobile-menu">
+                    <div class="container-mobile">
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__toggle"><a href="#"><img src="images/icons/m-menu/burger.svg"
+                                        alt="menu"></a></li>
+                            <li class="mobile-menu__info menu-item-has-children">
+                                <a href="#"><img src="images/icons/m-menu/info.svg" alt="info"></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__title">Время работы:</li>
+                                    <li>с 11.00 до 20.00</li>
+                                    <li>Без выходных</li>
+                                    <li class="sub-menu__title">Наши адреса:</li>
+                                    <li>МЦ “КРУИЗ”, Санкт-Петербург, Комендатский пр., д. 4, к. 2, лит. А, секция 032
+                                    </li>
+                                    <li>Адрес самовывоза: Ул.Складсая д6 помещение А313</li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__account"><a href="#"><img src="images/icons/m-menu/account.svg"
+                                        alt="account"></a>
+                            </li>
+                            <li class="mobile-menu__favorite"><a href="#"><img src="images/icons/m-menu/favorite.svg"
+                                        alt="favorite"></a></li>
+                            <li class="mobile-menu__compare"><a href="#"><img src="images/icons/m-menu/compare.svg"
+                                        alt="compare"></a>
+                            </li>
+                            <li class="mobile-menu__basket">
+                                <a href="#">
+                                    <img src="images/icons/m-menu/basket.svg" alt="basket">
+                                    <span class="mobile-menu__basket-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="mobile-menu__wrapper">
+                        <span class="mobile-menu__close">&times;</span>
+                        <ul class="mobile-menu__list">
+                            <li class="menu-item-has-children">
+                                <a href="#">Мойки для кухни</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Мойки из нержавеющей стали</a></li>
+                                    <li><a href="#">Мойки из латуни</a></li>
+                                    <li><a href="#">Мойки из гранита</a></li>
+                                    <li><a href="#">Аксессуары</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Смесители для кухни</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Классический дизайн</a></li>
+                                    <li><a href="#">Современный дизайн</a></li>
+                                    <li><a href="#">Смесители под фильтр</a></li>
+                                    <li><a href="#">Аксессуары</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Фильтры для воды</a></li>
+                            <li><a href="#">Измельчители</a></li>
+                            <li><a href="#">Дозаторы</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Посуда</a></li>
+                            <li><a href="#">Ножи</a></li>
+                            <li><a href="#">Уценка</a></li>
+                            <li><a href="#">Запчасти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header_inner">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <form class="search">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit">
+                                <img src="images/icons/search.svg" alt="Поиск">
+                            </button>
+                        </form>
+                        <div class="header__contacts">
+                            <div class="header__phones">
+                                <a href="tel:+88005057995">8-800-505-79-95</a>
+                                <a href="tel:+88126464880">8-812-646-48-80</a>
+                            </div>
+                            <div class="header__basket">
+                                <div class="basket">
+                                    <a class="basket__link" href="#">
+                                        <img class="basket__icon" src="images/icons/basket.svg" alt="Корзина">
+                                        <div class="basket__counter">
+                                            <span>0</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="header__basket-info">
+                                    <span class="header__basket-sum">0 р.</span>
+                                    <a class="header__basket-btn" href="#">Оформить заказ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__inner">
+                        <div class="catalog-menu">
+                            <a class="catalog-btn" href="#">
+                                <img src="images/icons/burger.svg" alt="меню">
+                                <span>Каталог OMOIKIRI</span>
+                            </a>
+                            <ul class="catalog-menu__list">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Мойки для кухни</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Мойки из нержавеющей стали</a></li>
+                                        <li><a href="#">Мойки из латуни</a></li>
+                                        <li><a href="#">Мойки из гранита</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Смесители для кухни</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Классический дизайн</a></li>
+                                        <li><a href="#">Современный дизайн</a></li>
+                                        <li><a href="#">Смесители под фильтр</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Фильтры для воды</a></li>
+                                <li><a href="#">Измельчители</a></li>
+                                <li><a href="#">Дозаторы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Посуда</a></li>
+                                <li><a href="#">Ножи</a></li>
+                                <li><a href="#">Уценка</a></li>
+                                <li><a href="#">Запчасти</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Мойки</a></li>
+                                <li><a href="#">Смесители</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Дозаторы</a></li>
+                                <li><a href="#">Измельчители</a></li>
+                                <li><a href="#">Фильтры</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Компании</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bar">
+            <ul class="bar__list">
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/favorite.svg" alt="favorite">
+                        <span>0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/list.svg" alt="list">
+                        <span>0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/basket.svg" alt="basket">
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="page-info">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <span><a href="#"><img src="images/icons/home.svg" alt="home"></a></span>
+                    <span class="breadcrumbs__separator">&#8250;</span>
+                    <span>Мойки для кухни</span>
+                </div>
+                <h1 class="page-info__title">Мойки Omoikiri</h1>
+            </div>
+        </section>
+        <div class="catalog-page">
+            <div class="container">
+                <div class="catalog-page__inner">
+                    <div class="sidebar">
+                        Фильтр
+                    </div>
+                    <div class="catalog-page__content">
+
+                        <section class="category">
+
+                            <div class="category__items">
+                                <div class="category__item">
+                                    <a class="category__item-link" href="#">
+                                        <img src="images/catalog/01.png" alt="category">
+                                        <h3 class="category__item-title">
+                                            Мойки из
+                                            нержавеющей
+                                            стали
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="category__item">
+                                    <a class="category__item-link" href="#">
+                                        <img src="images/catalog/01.png" alt="category">
+                                        <h3 class="category__item-title">
+                                            Мойки из
+                                            нержавеющей
+                                            стали
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="category__item">
+                                    <a class="category__item-link" href="#">
+                                        <img src="images/catalog/01.png" alt="category">
+                                        <h3 class="category__item-title">
+                                            Мойки из
+                                            нержавеющей
+                                            стали
+                                        </h3>
+                                    </a>
+                                </div>
+                                <div class="category__item">
+                                    <a class="category__item-link" href="#">
+                                        <img src="images/catalog/01.png" alt="category">
+                                        <h3 class="category__item-title">
+                                            Мойки из
+                                            нержавеющей
+                                            стали
+                                        </h3>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </section>
+
+                        <div class="sort">
+                            <div class="sort__select">
+                                <label class="sort__label">
+                                    <select name="select">
+                                        <option value="value1">По популярности</option>
+                                        <option value="value2">Значение 2</option>
+                                        <option value="value3">Значение 3</option>
+                                    </select>
+                                </label>
+                                <label class="sort__label">
+                                    <select name="quantity">
+                                        <option value="value1">24</option>
+                                        <option value="value2">16</option>
+                                        <option value="value3">12</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="sort__view">
+                                <button class="sort__view-btn tooltip tooltip--list"><img
+                                        src="images/icons/catalog/view-grid.svg" alt="list"></button>
+                                <button class="sort__view-btn tooltip tooltip--grid"><img
+                                        src="images/icons/catalog/view-list.svg" alt="grid"></button>
+                            </div>
+                        </div>
+
+                        <section class="products">
+                            <div class="products__items">
+
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+                                <div class="products__item">
+                                    <div class="products__item-bar">
+                                        <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                                        <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                                        <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                                    </div>
+                                    <a class="products__item-img" href="#">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </a>
+                                    <h3 class="products__item-title">
+                                        Кухонная мойка Omoikiri Akisame
+                                        100-2-IN-R
+                                    </h3>
+                                    <div class="products__item-thumbs">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                        <img src="images/catalog/01.png" alt="catalog">
+                                    </div>
+                                    <div class="products__item-info">
+                                        <span class="products__item-info-price">15 588 р.</span>
+                                        <a class="products__item-info-basket" href="#"><img
+                                                src="images/icons/product-basket.svg" alt="Корзина"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pagination">
+                                <a class="pagination__current" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">&#8250;</a>
+                            </div>
+                        </section>
+                        <section class="about">
+                            <div class="about__inner">
+                                <div class="about__img">
+                                    <img src="images/about.png" alt="about">
+                                </div>
+                                <div class="about__content">
+                                    <h2>Высокая функциональность и
+                                        превосходный дизайн
+                                    </h2>
+                                    <p>
+                                        Технологии производства и дизайнерские решения моек Omoikiri отражают
+                                        многовековые традиции Японии. В процессе производства специалисты этой
+                                        торговой марки используют только экологически чистые и безопасные для здоровья
+                                        материалы. Все изделия покрываются специальным шумопоглощающим составом.
+                                        Особенностью является глубина чаши, которая обеспечивает удобство при мытье
+                                        посуды, а также отсутствие брызг воды на столешнице. Кухонные мойки
+                                        изготавливают из нержавеющей стали, латуни, меди и искусственного гранита, так
+                                        же применяется PVD-покрытие. Большой ассортимент моек, разные размеры и
+                                        формы, а так же широкий выбор цветовых решений, позволяет купить мойку для
+                                        кухни в любом стиле. К мойке можно с легкостью подобрать соответствующий
+                                        смеситель и другие аксессуары, которые будут характеризоваться такими же
+                                        высокими показателями по функциональности, качеству и дизайну.
+                                    </p>
+                                    <p><strong>Преимущества покупки в нашем интернет-магазине:</strong></p>
+                                    <ul>
+                                        <li>Индивидуальный подход к каждому клиенту;</li>
+                                        <li>Высококвалифицированные сотрудники;</li>
+                                        <li>Гарантии на продукцию;</li>
+                                        <li>К продаже представлен весь ассортимент производителя;</li>
+                                        <li>Оперативная обработка заказов;</li>
+                                        <li>Различные формы оплаты;</li>
+                                        <li>Доставка по всей России.</li>
+                                    </ul>
+                                    <p>
+                                        Мы рады предложить клиентам знаменитые японские кухонные мойки Omoikiri по
+                                        лучшим ценам в СПб.
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="about__show-more">
+                                Развернуть
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top-inner">
+                    <div class="footer__content">
+                        <div class="footer__items">
+                            <div class="footer__item">
+                                <h3 class="footer__item-title">информация</h3>
+                                <ul class="footer__item-list">
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Политика безопасности</a></li>
+                                    <li><a href="#">Связаться с нами</a></li>
+                                    <li><a href="#">Карта сайта</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h3 class="footer__item-title">Категории</h3>
+                                <ul class="footer__item-list">
+                                    <li><a href="#">Мойки для кухни</a></li>
+                                    <li><a href="#">Смесители для кухни</a></li>
+                                    <li><a href="#">Измельчители</a></li>
+                                    <li><a href="#">Дозаторы</a></li>
+                                    <li><a href="#">Ножи</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item footer__item--contacts">
+                                <h3 class="footer__item-title">Контакты</h3>
+                                <ul class="footer__item-list footer__item-list--contacts">
+                                    <li class="footer__item-phone"><a href="tel:+88005057995">8-800-505-79-95</a></li>
+                                    <li class="footer__item-phone"><a href="tel:+88126464880">8-812-646-48-80</a></li>
+                                    <li class="footer__item-mail"><a
+                                            href="mailto:Omoikiri-inshop@mail.ru">Omoikiri-inshop@mail.ru</a>
+                                    </li>
+                                    <li class="footer__item-address">МЦ “КРУИЗ”, Санкт-Петербург,
+                                        Комендатский пр., д. 4, к. 2, лит. А,
+                                        секция 032
+                                    </li>
+                                    <li class="footer__item-address">Адрес самовывоза: Ул.Складсая д6 помещение А313
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__time">
+                                <h3 class="footer__time-title">Время работы</h3>
+                                <span class="footer__time-info">Ежедневно с 9-00 до 22-00</span>
+                            </div>
+                            <div class="footer__logo">
+                                <a class="footer__logo-link" href="#">
+                                    <img src="images/footer-logo.png" alt="logo">
+                                </a>
+                                <span class="footer__logo-descr">
+                                    Фирменный магазин
+                                    omoikiri-inshop.ru
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form-callback">
+                        <h3 class="form-callback__title">Обратная связь</h3>
+
+                        <input type="hidden" name="project_name" value="OMOIKIRI">
+                        <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+                        <input type="hidden" name="form_subject" value="Форма связи - Footer">
+
+                        <input class="form-callback__input" name="Фамилия, Имя" type="text" placeholder="Фамилия, Имя"
+                            required>
+                        <input class="form-callback__input" name="E-mail" type="email" placeholder="E-mail" required>
+                        <input class="form-callback__input" name="Телефон" type="tel" placeholder="Телефон" required>
+                        <textarea class="form-callback__input" placeholder="Сообщение" required></textarea>
+                        <button class="btn form-callback__btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <div class="footer__inner">
+                    <span> 2021 © www.omoikiri-inshop.ru Все цены на продукцию Omoikiri указаны с учетом НДС 20%.
+                        Официальный
+                        дилер Omoikiri в СПБ. Фирменный магазин OMOIKIRI</span>
+                </div>
+            </div>
+        </footer>
+        <!-- contacts -->
+        <div class="contact-block">
+            <button class="contact-block__btn"></button>
+            <ul class="contact-block__list">
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="#" target="_blank">
+                        <img src="images/icons/contacts/telegram.svg" alt="telegram">
+                        <span>Telegram</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="https://api.whatsapp.com/send?phone=+88126464880"
+                        target="_blank">
+                        <img src="images/icons/contacts/whatsApp.svg" alt="whatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="mailto:Omoikiri-inshop@mail.ru">
+                        <img src="images/icons/contacts/email.svg" alt="email">
+                        <span>Omoikiri-inshop@mail.ru</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link contact-block__link--callback" href="#">
+                        <img src="images/icons/contacts/tel.svg" alt="tel">
+                        <span>Заказать звонок</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- callback-modal -->
+        <div class="callback-modal">
+            <form class="callback-modal__form">
+                <h2 class="title callback-modal__form-title">Заказать звонок</h2>
+                <input type="hidden" name="project_name" value="OMOIKIRI">
+                <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+                <input type="hidden" name="form_subject" value="Заказ звонка">
+
+                <input class="callback-modal__input" name="Ваше имя" type="text" placeholder="Ваше имя" required>
+                <input class="callback-modal__input" name="Контактный телефон" type="tel"
+                    placeholder="Контактный телефон" required>
+                <button class="callback-modal__btn" type="submit">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // modals
+        var callbackModal = new tingle.modal({
+            footer: false,
+            stickyFooter: false,
+            closeMethods: ['overlay', 'button', 'escape'],
+            closeLabel: "Закрыть",
+            cssClass: ['submit-modal'],
+        });
+
+        callbackModal.setContent(document.querySelector('.callback-modal').innerHTML);
+        var callbackBtn = document.querySelector('.contact-block__link--callback');
+        callbackBtn.addEventListener('click', function () {
+            callbackModal.open();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omoikiri-shop</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <ul class="top-menu">
+                        <li class="top-menu__item top-menu__item--address"><a href="#">Наши адреса</a>
+                            <div class="top-menu__map">
+                                <iframe class="yandex-map"
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4e43801f6849504477ea03452f96efd7c40804b5cfdefdfcfcf692aea7622e2&amp;source=constructor"
+                                    width="100%" height="320" frameborder="0"></iframe>
+                            </div>
+                        </li>
+                        <li class="top-menu__item top-menu__item--time"><a href="#">Время работы</a>
+                            <ul class="top-menu__sub">
+                                <li>с 11.00 до 20.00</li>
+                                <li>Без выходных</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <div class="mobile-menu">
+                    <div class="container-mobile">
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__toggle"><a href="#"><img src="images/icons/m-menu/burger.svg"
+                                        alt="menu"></a></li>
+                            <li class="mobile-menu__info menu-item-has-children">
+                                <a href="#"><img src="images/icons/m-menu/info.svg" alt="info"></a>
+                                <ul class="sub-menu">
+                                    <li class="sub-menu__title">Время работы:</li>
+                                    <li>с 11.00 до 20.00</li>
+                                    <li>Без выходных</li>
+                                    <li class="sub-menu__title">Наши адреса:</li>
+                                    <li>МЦ “КРУИЗ”, Санкт-Петербург, Комендатский пр., д. 4, к. 2, лит. А, секция 032
+                                    </li>
+                                    <li>Адрес самовывоза: Ул.Складсая д6 помещение А313</li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu__account"><a href="#"><img src="images/icons/m-menu/account.svg"
+                                        alt="account"></a>
+                            </li>
+                            <li class="mobile-menu__favorite"><a href="#"><img src="images/icons/m-menu/favorite.svg"
+                                        alt="favorite"></a></li>
+                            <li class="mobile-menu__compare"><a href="#"><img src="images/icons/m-menu/compare.svg"
+                                        alt="compare"></a>
+                            </li>
+                            <li class="mobile-menu__basket">
+                                <a href="#">
+                                    <img src="images/icons/m-menu/basket.svg" alt="basket">
+                                    <span class="mobile-menu__basket-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="mobile-menu__wrapper">
+                        <span class="mobile-menu__close">&times;</span>
+                        <ul class="mobile-menu__list">
+                            <li class="menu-item-has-children">
+                                <a href="#">Мойки для кухни</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Мойки из нержавеющей стали</a></li>
+                                    <li><a href="#">Мойки из латуни</a></li>
+                                    <li><a href="#">Мойки из гранита</a></li>
+                                    <li><a href="#">Аксессуары</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Смесители для кухни</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Классический дизайн</a></li>
+                                    <li><a href="#">Современный дизайн</a></li>
+                                    <li><a href="#">Смесители под фильтр</a></li>
+                                    <li><a href="#">Аксессуары</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Фильтры для воды</a></li>
+                            <li><a href="#">Измельчители</a></li>
+                            <li><a href="#">Дозаторы</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Посуда</a></li>
+                            <li><a href="#">Ножи</a></li>
+                            <li><a href="#">Уценка</a></li>
+                            <li><a href="#">Запчасти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header_inner">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <form class="search">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit">
+                                <img src="images/icons/search.svg" alt="Поиск">
+                            </button>
+                        </form>
+                        <div class="header__contacts">
+                            <div class="header__phones">
+                                <a href="tel:+88005057995">8-800-505-79-95</a>
+                                <a href="tel:+88126464880">8-812-646-48-80</a>
+                            </div>
+                            <div class="header__basket">
+                                <div class="basket">
+                                    <a class="basket__link" href="#">
+                                        <img class="basket__icon" src="images/icons/basket.svg" alt="Корзина">
+                                        <div class="basket__counter">
+                                            <span>0</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="header__basket-info">
+                                    <span class="header__basket-sum">0 р.</span>
+                                    <a class="header__basket-btn" href="#">Оформить заказ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav__inner">
+                        <div class="catalog-menu">
+                            <a class="catalog-btn" href="#">
+                                <img src="images/icons/burger.svg" alt="меню">
+                                <span>Каталог OMOIKIRI</span>
+                            </a>
+                            <ul class="catalog-menu__list">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Мойки для кухни</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Мойки из нержавеющей стали</a></li>
+                                        <li><a href="#">Мойки из латуни</a></li>
+                                        <li><a href="#">Мойки из гранита</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Смесители для кухни</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Классический дизайн</a></li>
+                                        <li><a href="#">Современный дизайн</a></li>
+                                        <li><a href="#">Смесители под фильтр</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Фильтры для воды</a></li>
+                                <li><a href="#">Измельчители</a></li>
+                                <li><a href="#">Дозаторы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Посуда</a></li>
+                                <li><a href="#">Ножи</a></li>
+                                <li><a href="#">Уценка</a></li>
+                                <li><a href="#">Запчасти</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Мойки</a></li>
+                                <li><a href="#">Смесители</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Дозаторы</a></li>
+                                <li><a href="#">Измельчители</a></li>
+                                <li><a href="#">Фильтры</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Компании</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="bar">
+            <ul class="bar__list">
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/favorite.svg" alt="favorite">
+                        <span>0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/list.svg" alt="list">
+                        <span>0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/icons/bar/basket.svg" alt="basket">
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="page-info">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <span><a href="#"><img src="images/icons/home.svg" alt="home"></a></span>
+                    <span class="breadcrumbs__separator">&#8250;</span>
+                    <span>Мойки для кухни</span>
+                </div>
+                <h1 class="page-info__title">Мойки Omoikiri</h1>
+            </div>
+        </section>
+        <main class="card">
+            <div class="container">
+                <div class="card__inner">
+                    <div class="card__imgs">
+                        <a class="card__imgs-video" href="#">
+                            <img src="images/icons/play-btn.svg" alt="play">
+                        </a>
+                        <a class="card__imgs-main" data-fancybox="gallery" href="images/card/card-img.png"><img
+                                src="images/card/card-img.png" alt="card"></a>
+                        <div class="card__imgs-thumbs">
+                            <a data-fancybox="gallery" href="images/catalog/01.png"><img src="images/catalog/01.png"
+                                    alt="card"></a>
+                            <a data-fancybox="gallery" href="images/catalog/02.png"><img src="images/catalog/02.png"
+                                    alt="card"></a>
+                        </div>
+                    </div>
+                    <div class="card__descr">
+                        <div class="card__descr-top">
+                            <div class="card__rate">
+                                <div class="card__rate-items">
+                                    <img src="images/icons/card/rate.svg" alt="rate">
+                                    <img src="images/icons/card/rate.svg" alt="rate">
+                                    <img src="images/icons/card/rate.svg" alt="rate">
+                                    <img src="images/icons/card/rate.svg" alt="rate">
+                                    <img src="images/icons/card/rate.svg" alt="rate">
+                                </div>
+                                <span class="card__review">Отзывы: <a href="#">(0)</a></span>
+                            </div>
+                            <div class="card__btns">
+                                <button class="card__btn tooltip tooltip--favorite">
+                                    <svg class="card__btns-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 8.4C1 4 4.5 3 6.5 3C9 3 11 5 12 6.5C13 5 15 3 17.5 3C19.5 3 23 4 23 8.4C23 15 12 21 12 21C12 21 1 15 1 8.4Z"
+                                            stroke="white" stroke-width="2" />
+                                    </svg>
+                                </button>
+                                <button class="card__btn tooltip tooltip--compare">
+                                    <svg class="card__btns-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6 12C7.10457 12 8 11.1046 8 10C8 8.89543 7.10457 8 6 8C4.89543 8 4 8.89543 4 10C4 11.1046 4.89543 12 6 12Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M6 4V8" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M6 12V20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 4V14" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 18V20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M18 9C19.1046 9 20 8.10457 20 7C20 5.89543 19.1046 5 18 5C16.8954 5 16 5.89543 16 7C16 8.10457 16.8954 9 18 9Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18 4V5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M18 9V20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="card__descr-body">
+                            <span class="card__article-number">Артикул: 4973547</span>
+                            <div class="card__price">
+                                <span class="card__price-value">48 288 р.</span>
+                                <a class="card__price-btn" href="#">Нашли дешевле?</a>
+                            </div>
+                            <div class="card__section-inner">
+                                <div class="card__section">
+                                    <div class="card__quantity">
+                                        <button>-</button>
+                                        <input type="number" value="1">
+                                        <button>+</button>
+                                    </div>
+                                    <a class="card__to-basket" href="#">В КОРЗИНУ</a>
+
+                                </div>
+                                <div class="card__section">
+                                    <div class="card__buy-decsr">
+                                        <h3 class="card__buy-title">Купить в один клик</h3>
+                                        <span class="card__buy-text">Введите номер телефона</span>
+                                    </div>
+                                    <form class="quick-buy">
+                                        <input type="hidden" name="project_name" value="OMOIKIRI">
+                                        <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+                                        <input type="hidden" name="form_subject" value="Покупка товара">
+
+                                        <input class="quick-buy__input" type="tel" name="Телефон"
+                                            placeholder="Номер телефона" required>
+                                        <button class="quick-buy__btn" type="submit">Купить</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card__thumbs">
+                                <img class="card__thumbs-img card__thumbs-img--active" src="images/card/card-img.png" alt="card">
+                                <img class="card__thumbs-img" src="images/card/card-img.png" alt="card">
+                            </div>
+                        </div>
+                        <div class="card__props">
+                            <div class="card__props-top">
+                                <h2 class="card__props-title">Краткие характеристики</h2>
+                                <a class="card__props-link" href="#">Все характеристики</a>
+                            </div>
+                            <div class="card__props-items">
+                                <div class="card__props-item">
+                                    <span class="card__props-name">Тип монтажа:</span>
+                                    <span class="card__props-value">Врезной, вровень</span>
+                                </div>
+                                <div class="card__props-item">
+                                    <span class="card__props-name">Материал:</span>
+                                    <span class="card__props-value">Нержавеющая сталь</span>
+                                </div>
+                                <div class="card__props-item">
+                                    <span class="card__props-name">Цвет:</span>
+                                    <span class="card__props-value">Светлое золото</span>
+                                </div>
+                                <div class="card__props-item">
+                                    <span class="card__props-name">Размер:</span>
+                                    <span class="card__props-value">940 x 200 мм</span>
+                                </div>
+                                <div class="card__props-item">
+                                    <span class="card__props-name">Глубина:</span>
+                                    <span class="card__props-value">200 мм</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__delivery">
+                            <img src="images/icons/card/delivery.svg" alt="delivery">
+                            <div class="card__delivery-content">
+                                <h3 class="card__delivery-title">
+                                    Бесплатная доставка
+                                </h3>
+                                <span class="card__delivery-text">
+                                    По всей территории России
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="props">
+            <div class="container">
+                <div class="props__top">
+                    <h2 class="props__title">
+                        Характеристики
+                    </h2>
+                    <span class="props__review">
+                        Отзывы: <a href="#">(0)</a>
+                    </span>
+                </div>
+                <div class="props__inner">
+                    <div class="props__items">
+                        <h3 class="props__item-title">Сушка для посуды</h3>
+                        <div class="props__item">
+                            <span class="props__item-name">Тип монтажа</span>
+                            <span class="props__item-value">Врезной, вровень</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Материал</span>
+                            <span class="props__item-value">Нержавеющая сталь</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Цвет</span>
+                            <span class="props__item-value">Светлое золото</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Размер</span>
+                            <span class="props__item-value">940 x 200 мм</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Глубина</span>
+                            <span class="props__item-value">200 мм</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Толщина материала</span>
+                            <span class="props__item-value">1.2 мм</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Количество отсеков</span>
+                            <span class="props__item-value">3 шт</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Отсек для стаканов</span>
+                            <span class="props__item-value">Да</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Отсек для ножей</span>
+                            <span class="props__item-value">Да</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Отсек для разделочных досок</span>
+                            <span class="props__item-value">Да</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Отсек для тарелок</span>
+                            <span class="props__item-value">Нет</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Сливное отверстие</span>
+                            <span class="props__item-value">52 мм</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Страна производитель</span>
+                            <span class="props__item-value">Япония</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Гарантия</span>
+                            <span class="props__item-value">3 года</span>
+                        </div>
+                    </div>
+                    <div class="props__items">
+                        <h3 class="props__item-title">Комплектация</h3>
+                        <div class="props__item">
+                            <span class="props__item-name">Разделочная доска</span>
+                            <span class="props__item-value">3 шт</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Крепеж</span>
+                            <span class="props__item-value">Есть</span>
+                        </div>
+                        <div class="props__item">
+                            <span class="props__item-name">Инструкция</span>
+                            <span class="props__item-value">Есть</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__top-inner">
+                    <h2 class="reviews__title">Отзывы: <span>(0)</span></h2>
+                    <a class="reviews__btn" href="#">НАПИСАТЬ ОТЗЫВ</a>
+                </div>
+                <div class="reviews__items">
+                    <span>Нет отзывов об этом товаре.</span>
+                </div>
+            </div>
+        </section>
+        <section class="additionally">
+            <div class="container">
+                <h2 class="additionally__title">С этим товаром покупают</h2>
+                <div class="additionally__items">
+                    <div class="products__item">
+                        <div class="products__item-bar">
+                            <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                            <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                            <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                        </div>
+                        <a class="products__item-img" href="#">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </a>
+                        <h3 class="products__item-title">
+                            Кухонная мойка Omoikiri Akisame
+                            100-2-IN-R
+                        </h3>
+                        <div class="products__item-thumbs">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </div>
+                        <div class="products__item-info">
+                            <span class="products__item-info-price">15 588 р.</span>
+                            <a class="products__item-info-basket" href="#"><img src="images/icons/product-basket.svg"
+                                    alt="Корзина"></a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-bar">
+                            <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                            <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                            <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                        </div>
+                        <a class="products__item-img" href="#">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </a>
+                        <h3 class="products__item-title">
+                            Кухонная мойка Omoikiri Akisame
+                            100-2-IN-R
+                        </h3>
+                        <div class="products__item-thumbs">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </div>
+                        <div class="products__item-info">
+                            <span class="products__item-info-price">15 588 р.</span>
+                            <a class="products__item-info-basket" href="#"><img src="images/icons/product-basket.svg"
+                                    alt="Корзина"></a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-bar">
+                            <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                            <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                            <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                        </div>
+                        <a class="products__item-img" href="#">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </a>
+                        <h3 class="products__item-title">
+                            Кухонная мойка Omoikiri Akisame
+                            100-2-IN-R
+                        </h3>
+                        <div class="products__item-thumbs">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </div>
+                        <div class="products__item-info">
+                            <span class="products__item-info-price">15 588 р.</span>
+                            <a class="products__item-info-basket" href="#"><img src="images/icons/product-basket.svg"
+                                    alt="Корзина"></a>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-bar">
+                            <a href="#"><img src="images/icons/catalog/favorite.svg" alt="favorite"></a>
+                            <a href="#"><img src="images/icons/catalog/adjust.svg" alt="adjust"></a>
+                            <a href="#"><img src="images/icons/catalog/view.svg" alt="view"></a>
+                        </div>
+                        <a class="products__item-img" href="#">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </a>
+                        <h3 class="products__item-title">
+                            Кухонная мойка Omoikiri Akisame
+                            100-2-IN-R
+                        </h3>
+                        <div class="products__item-thumbs">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                            <img src="images/catalog/01.png" alt="catalog">
+                        </div>
+                        <div class="products__item-info">
+                            <span class="products__item-info-price">15 588 р.</span>
+                            <a class="products__item-info-basket" href="#"><img src="images/icons/product-basket.svg"
+                                    alt="Корзина"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top-inner">
+                    <div class="footer__content">
+                        <div class="footer__items">
+                            <div class="footer__item">
+                                <h3 class="footer__item-title">информация</h3>
+                                <ul class="footer__item-list">
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Политика безопасности</a></li>
+                                    <li><a href="#">Связаться с нами</a></li>
+                                    <li><a href="#">Карта сайта</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item">
+                                <h3 class="footer__item-title">Категории</h3>
+                                <ul class="footer__item-list">
+                                    <li><a href="#">Мойки для кухни</a></li>
+                                    <li><a href="#">Смесители для кухни</a></li>
+                                    <li><a href="#">Измельчители</a></li>
+                                    <li><a href="#">Дозаторы</a></li>
+                                    <li><a href="#">Ножи</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__item footer__item--contacts">
+                                <h3 class="footer__item-title">Контакты</h3>
+                                <ul class="footer__item-list footer__item-list--contacts">
+                                    <li class="footer__item-phone"><a href="tel:+88005057995">8-800-505-79-95</a></li>
+                                    <li class="footer__item-phone"><a href="tel:+88126464880">8-812-646-48-80</a></li>
+                                    <li class="footer__item-mail"><a
+                                            href="mailto:Omoikiri-inshop@mail.ru">Omoikiri-inshop@mail.ru</a>
+                                    </li>
+                                    <li class="footer__item-address">МЦ “КРУИЗ”, Санкт-Петербург,
+                                        Комендатский пр., д. 4, к. 2, лит. А,
+                                        секция 032
+                                    </li>
+                                    <li class="footer__item-address">Адрес самовывоза: Ул.Складсая д6 помещение А313
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__time">
+                                <h3 class="footer__time-title">Время работы</h3>
+                                <span class="footer__time-info">Ежедневно с 9-00 до 22-00</span>
+                            </div>
+                            <div class="footer__logo">
+                                <a class="footer__logo-link" href="#">
+                                    <img src="images/footer-logo.png" alt="logo">
+                                </a>
+                                <span class="footer__logo-descr">
+                                    Фирменный магазин
+                                    omoikiri-inshop.ru
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form-callback">
+                        <h3 class="form-callback__title">Обратная связь</h3>
+
+                        <input type="hidden" name="project_name" value="OMOIKIRI">
+                        <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+                        <input type="hidden" name="form_subject" value="Форма связи - Footer">
+
+                        <input class="form-callback__input" name="Фамилия, Имя" type="text" placeholder="Фамилия, Имя"
+                            required>
+                        <input class="form-callback__input" name="E-mail" type="email" placeholder="E-mail" required>
+                        <input class="form-callback__input" name="Телефон" type="tel" placeholder="Телефон" required>
+                        <textarea class="form-callback__input" placeholder="Сообщение" required></textarea>
+                        <button class="btn form-callback__btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <div class="footer__inner">
+                    <span> 2021 © www.omoikiri-inshop.ru Все цены на продукцию Omoikiri указаны с учетом НДС 20%.
+                        Официальный
+                        дилер Omoikiri в СПБ. Фирменный магазин OMOIKIRI</span>
+                </div>
+            </div>
+        </footer>
+        <!-- contacts -->
+        <div class="contact-block">
+            <button class="contact-block__btn"></button>
+            <ul class="contact-block__list">
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="#" target="_blank">
+                        <img src="images/icons/contacts/telegram.svg" alt="telegram">
+                        <span>Telegram</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="https://api.whatsapp.com/send?phone=+88126464880"
+                        target="_blank">
+                        <img src="images/icons/contacts/whatsApp.svg" alt="whatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link" href="mailto:Omoikiri-inshop@mail.ru">
+                        <img src="images/icons/contacts/email.svg" alt="email">
+                        <span>Omoikiri-inshop@mail.ru</span>
+                    </a>
+                </li>
+                <li class="contact-block__item">
+                    <a class="contact-block__link contact-block__link--callback" href="#">
+                        <img src="images/icons/contacts/tel.svg" alt="tel">
+                        <span>Заказать звонок</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- callback-modal -->
+        <div class="callback-modal">
+            <form class="callback-modal__form">
+                <h2 class="title callback-modal__form-title">Заказать звонок</h2>
+                <input type="hidden" name="project_name" value="OMOIKIRI">
+                <input type="hidden" name="admin_email" value="maddmerf@gmail.com">
+                <input type="hidden" name="form_subject" value="Заказ звонка">
+
+                <input class="callback-modal__input" name="Ваше имя" type="text" placeholder="Ваше имя" required>
+                <input class="callback-modal__input" name="Контактный телефон" type="tel"
+                    placeholder="Контактный телефон" required>
+                <button class="callback-modal__btn" type="submit">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // modals
+        var callbackModal = new tingle.modal({
+            footer: false,
+            stickyFooter: false,
+            closeMethods: ['overlay', 'button', 'escape'],
+            closeLabel: "Закрыть",
+            cssClass: ['submit-modal'],
+        });
+
+        callbackModal.setContent(document.querySelector('.callback-modal').innerHTML);
+        var callbackBtn = document.querySelector('.contact-block__link--callback');
+        callbackBtn.addEventListener('click', function () {
+            callbackModal.open();
+        });
+    </script>
+</body>
+
+</html>
